@@ -7,21 +7,6 @@ using UnityEngine.Experimental.XR;
 public class Main : MonoBehaviour
 {
     private ARSessionOrigin arOrigin;
-
-    void Start()
-    {
-        arOrigin = FindObjectOfType<ARSessionOrigin>();
-    }
-
-    void Update()
-    {
-        
-    }
-}
-/*
-public class ARTapToPlaceObject : MonoBehaviour
-{
-    private ARSessionOrigin arOrigin;
     private Pose placementPose;
     private bool placementPoseIsValid = false;
     public GameObject placementIndicator;
@@ -29,7 +14,7 @@ public class ARTapToPlaceObject : MonoBehaviour
 
     void Start()
     {
-
+        arOrigin = FindObjectOfType<ARSessionOrigin>();
     }
 
     void Update()
@@ -79,4 +64,3 @@ public class ARTapToPlaceObject : MonoBehaviour
         Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
     }
 }
-*/

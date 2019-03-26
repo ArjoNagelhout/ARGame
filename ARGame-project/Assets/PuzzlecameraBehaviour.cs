@@ -16,13 +16,14 @@ public class PuzzlecameraBehaviour : MonoBehaviour
     public float maxY;
 
     private int actualRotations;
-    private int targetYRotation = 0;
+    private int targetYRotation;
     private float currentY;
 
     void Start()
     {
-        actualRotations = (totalRotation % 4) + 4;
+        actualRotations = totalRotation % 4;
         currentY = totalRotation*((maxY - minY) / maxRotations);
+        //targetYRotation = (actualRotations * 90) + 180;
         transform.position = new Vector3(transform.position.x, currentY, transform.position.z);
     }
 
@@ -118,8 +119,8 @@ public class PuzzlecameraBehaviour : MonoBehaviour
 
         }
 
-        //Debug.Log(string.Format("lookRotation: {0}, rotation: {1}, totalRotation: {2}, actualRotations: {3}", lookRotation, rotation, totalRotation, actualRotations));
-        //Debug.DrawRay(transform.position, transform.forward);
+        Debug.Log(string.Format("lookRotation: {0}, rotation: {1}, totalRotation: {2}, actualRotations: {3}", lookRotation, rotation, totalRotation, actualRotations));
+        Debug.DrawRay(transform.position, transform.forward*10);
 
         Quaternion targetRotation = Quaternion.Euler(0, targetYRotation, 0);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotateSpeed*Time.deltaTime);
