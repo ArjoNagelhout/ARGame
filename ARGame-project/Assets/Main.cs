@@ -12,6 +12,8 @@ public class Main : MonoBehaviour
     public GameObject placementIndicator;
     public GameObject objectToPlace;
 
+    private bool boardPlaced = true; // Has the game board been placed
+
     void Start()
     {
         arOrigin = FindObjectOfType<ARSessionOrigin>();
