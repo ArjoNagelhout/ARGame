@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2348556665989177495}
   - component: {fileID: 2348556665989177493}
   - component: {fileID: 2348556665989177492}
+  - component: {fileID: 8558555957612517721}
   m_Layer: 0
   m_Name: BoardPiece_straight
   m_TagString: Untagged
@@ -77,3 +78,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8558555957612517721
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348556665989177494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 4c4c95b8d03794f659ffd350e2392b4a, type: 3}
