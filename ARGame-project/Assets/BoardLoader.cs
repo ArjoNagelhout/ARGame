@@ -8,14 +8,9 @@ public class BoardLoader : MonoBehaviour
     public int currentLevel_id;
     public Transform toFollow;
 
-    void Start()
+    public void LoadLevel(Pose levelPosition)
     {
-        LoadLevel();
-    }
-
-    private void LoadLevel()
-    {
-        GameObject currentLevel = Instantiate(levels[currentLevel_id]);
+        GameObject currentLevel = Instantiate(levels[currentLevel_id], levelPosition.position, levelPosition.rotation);
         FollowingCamera[] followingCameras = currentLevel.GetComponentsInChildren<FollowingCamera>();
 
         foreach (FollowingCamera followingCamera in followingCameras)

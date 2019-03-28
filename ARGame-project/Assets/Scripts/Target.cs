@@ -10,16 +10,10 @@ public class Target : MonoBehaviour
     [System.NonSerialized]
     public bool reached;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         gameBoard = GetComponentInParent<GameBoard>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     void OnTriggerEnter(Collider other)

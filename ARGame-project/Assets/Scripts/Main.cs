@@ -6,17 +6,22 @@ using UnityEngine.Experimental.XR;
 
 public class Main : MonoBehaviour
 {
-    /*private ARSessionOrigin arOrigin;
+    [System.NonSerialized]
+    public bool boardPlaced;
+
+    private ARSessionOrigin arOrigin;
+
     private Pose placementPose;
     private bool placementPoseIsValid;
     public GameObject placementIndicator;
-    public GameObject objectToPlace;
 
-    private bool boardPlaced;
+    private GameObject gameBoardLoader;
+    public GameObject placementPopup;
 
     void Start()
     {
         arOrigin = FindObjectOfType<ARSessionOrigin>();
+        gameBoardLoader = FindObjectOfType<BoardLoader>().gameObject;
     }
 
     void Update()
@@ -26,7 +31,7 @@ public class Main : MonoBehaviour
 
         if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            PlaceObject();
+            PlaceBoard();
         }
     }
 
@@ -61,8 +66,10 @@ public class Main : MonoBehaviour
         }
     }
 
-    private void PlaceObject()
+    // Place the board at the place of the placement indicator
+    public void PlaceBoard()
     {
-        Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
-    }*/
+        placementPopup.SetActive(false);
+        gameBoardLoader.GetComponent<BoardLoader>().LoadLevel(placementPose);
+    }
 }

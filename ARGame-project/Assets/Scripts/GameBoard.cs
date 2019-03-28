@@ -7,6 +7,8 @@ public class GameBoard : MonoBehaviour
     [System.NonSerialized]
     public Target[] targets;
 
+    public Transform placementIndicator;
+
     [System.NonSerialized]
     public bool completed;
 
