@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2792618272111853701}
   - component: {fileID: 8071086005899197776}
   - component: {fileID: 1237962156228632717}
+  - component: {fileID: 7477330854954894086}
+  - component: {fileID: 8233478847341815693}
   m_Layer: 0
   m_Name: BoardTarget
   m_TagString: Untagged
@@ -77,3 +79,28 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7477330854954894086
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997393026972642039}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8233478847341815693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997393026972642039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ced9299f903b4c76b62e86430f949e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -5,33 +5,14 @@ using UnityEngine;
 public class FollowingCamera : MonoBehaviour
 {
     public float maxSpeed;
-    public float acceleration;
 
     public Rigidbody rb;
-
-
     public Transform toFollow;
-
-
-    private Vector3 velocity;
-
-
-    void Start()
-    {
-
-    }
-
-
-    void Update()
-    {
-
-
-    }
 
     void FixedUpdate()
     {
         MoveTowardsPosition(toFollow);
-       
+
     }
 
     private void MoveTowardsPosition(Transform target)
@@ -39,11 +20,6 @@ public class FollowingCamera : MonoBehaviour
         Vector3 targetDirection = (target.position - transform.position).normalized;
         targetDirection = Vector3.Scale(targetDirection, new Vector3(1, 0, 1)); // Verticale rotatie telt niet mee
 
-        Vector3 targetVelocity = targetDirection * maxSpeed;
-
-        //velocity = Vector3.Lerp(velocity, targetVelocity, acceleration);
-        rb.AddForce(targetVelocity);
+        rb.AddForce(targetDirection * maxSpeed);
     }
-
-
 }

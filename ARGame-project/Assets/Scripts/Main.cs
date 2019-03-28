@@ -8,11 +8,11 @@ public class Main : MonoBehaviour
 {
     private ARSessionOrigin arOrigin;
     private Pose placementPose;
-    private bool placementPoseIsValid = false;
+    private bool placementPoseIsValid;
     public GameObject placementIndicator;
     public GameObject objectToPlace;
 
-    private bool boardPlaced = true; // Has the game board been placed
+    private bool boardPlaced;
 
     void Start()
     {

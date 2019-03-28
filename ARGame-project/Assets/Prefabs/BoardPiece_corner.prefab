@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8232106070486532618}
   - component: {fileID: 8232106070486532628}
   - component: {fileID: 8232106070486532619}
-  - component: {fileID: 22592381010807281}
+  - component: {fileID: 6256490435926666092}
   m_Layer: 0
   m_Name: BoardPiece_corner
   m_TagString: Untagged
@@ -78,14 +78,14 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &22592381010807281
+--- !u!64 &6256490435926666092
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8232106070486532617}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4226cb68d46234c28bc2f90551fe9aad, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
