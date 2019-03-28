@@ -215,7 +215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300.8, y: -211.3}
+  m_AnchoredPosition: {x: -298.80002, y: -211.3}
   m_SizeDelta: {x: 476.7, y: 102}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &187553765
@@ -1054,7 +1054,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 273483297d25a4e9193c76807c62ce1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1142598213}
+  placeButton: {fileID: 628011242}
 --- !u!95 &1142598213
 Animator:
   serializedVersion: 3
@@ -1576,7 +1577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 314.6, y: -87.6}
+  m_AnchoredPosition: {x: -285, y: -87.6}
   m_SizeDelta: {x: 504.3, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1704938768
@@ -1737,7 +1738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placementIndicator: {fileID: 743374400}
-  placementPopup: {fileID: 1142598208}
+  placementPopup: {fileID: 1142598212}
 --- !u!1 &1815558577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1903188072}
   - component: {fileID: 1903188073}
+  - component: {fileID: 1903188074}
   m_Layer: 5
   m_Name: LevelDescription
   m_TagString: Untagged
@@ -1869,3 +1871,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   description: 
+--- !u!95 &1903188074
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903188071}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66d6663d7e1c44bed8496af972b4966c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
