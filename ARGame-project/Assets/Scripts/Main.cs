@@ -6,7 +6,7 @@ using UnityEngine.Experimental.XR;
 
 public class Main : MonoBehaviour
 {
-    private ARSessionOrigin arOrigin;
+    /*private ARSessionOrigin arOrigin;
     private Pose placementPose;
     private bool placementPoseIsValid;
     public GameObject placementIndicator;
@@ -64,5 +64,5 @@ public class Main : MonoBehaviour
     private void PlaceObject()
     {
         Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
-    }
+    }*/
 }
