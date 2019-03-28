@@ -16,12 +16,14 @@ public class Main : MonoBehaviour
     public GameObject placementIndicator;
 
     private GameObject gameBoardLoader;
-    public GameObject placementPopup;
+    public PlacementPopup placementPopup;
 
     void Start()
     {
         arOrigin = FindObjectOfType<ARSessionOrigin>();
         gameBoardLoader = FindObjectOfType<BoardLoader>().gameObject;
+
+        placementPopup.OpenPopup();
     }
 
     void Update()
@@ -69,7 +71,7 @@ public class Main : MonoBehaviour
     // Place the board at the place of the placement indicator
     public void PlaceBoard()
     {
-        placementPopup.SetActive(false);
+        placementPopup.ClosePopup();
         gameBoardLoader.GetComponent<BoardLoader>().LoadLevel(placementPose);
     }
 }
