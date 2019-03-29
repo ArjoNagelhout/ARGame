@@ -18,6 +18,7 @@ public class Main : MonoBehaviour
     private GameObject gameBoardLoader;
     public PlacementPopup placementPopup;
     public LevelDescription levelDescription;
+    public RepositionButton repositionButton;
 
     void Start()
     {
@@ -32,10 +33,14 @@ public class Main : MonoBehaviour
         UpdatePlacementPose();
         UpdatePlacementIndicator();
 
-        if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        /*if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            PlaceBoard();
-        }
+            if (boardPlaced == false)
+            {
+                PlaceBoard();
+            }
+
+        }*/
     }
 
     private void UpdatePlacementPose()
@@ -69,11 +74,26 @@ public class Main : MonoBehaviour
         }
     }
 
+    public void RepositionBoard()
+    {
+        repositionButton.HideButton();
+        placementPopup.OpenPopup();
+    }
+
     // Place the board at the place of the placement indicator
     public void PlaceBoard()
     {
+        // Place for the first time
+        if (boardPlaced == false)
+        {
+            levelDescription.ShowDescription("Test", "And even when they give everything. Nothing gives them the chance to get it.");
+            gameBoardLoader.GetComponent<BoardLoader>().LoadLevel();
+        }
+
+        boardPlaced = true;
         placementPopup.ClosePopup();
-        levelDescription.ShowDescription("Test", "And even when they give everything. Nothing gives them the chance to get it.");
-        gameBoardLoader.GetComponent<BoardLoader>().LoadLevel(placementPose);
+        gameBoardLoader.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
+        repositionButton.ShowButton();
+
     }
 }
