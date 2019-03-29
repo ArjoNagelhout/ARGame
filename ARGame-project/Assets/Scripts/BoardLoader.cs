@@ -68,7 +68,15 @@ public class BoardLoader : MonoBehaviour
         else
         {
             // Show end screen
-            SceneManager.LoadScene(2);
+            currentLevel.GetComponent<GameBoard>().DestroyBoard();
+            succesSound.Play();
+            Invoke("LoadEnding", 5f);
+
         }
+    }
+
+    public void LoadEnding()
+    {
+        SceneManager.LoadScene(2);
     }
 }
