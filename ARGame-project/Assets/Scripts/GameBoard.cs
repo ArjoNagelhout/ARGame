@@ -9,12 +9,19 @@ public class GameBoard : MonoBehaviour
 
     public Transform placementIndicator;
 
+    public string subtitle;
+
+    private BoardLoader gameBoardLoader;
+
+    public Animator animator;
+
     [System.NonSerialized]
     public bool completed;
 
     void Start()
     {
         targets = GetComponentsInChildren<Target>();
+        gameBoardLoader = FindObjectOfType<BoardLoader>();
     }
 
     public void CheckProgress()
@@ -34,8 +41,13 @@ public class GameBoard : MonoBehaviour
             if (completed == false)
             {
                 completed = true;
-                Debug.Log("Completed");
+                gameBoardLoader.FinishLevel();
             }
         }
+    }
+
+    public void DestroyBoard()
+    {
+
     }
 }

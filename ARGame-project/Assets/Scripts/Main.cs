@@ -14,10 +14,12 @@ public class Main : MonoBehaviour
     private Pose placementPose;
     private bool placementPoseIsValid;
     public GameObject placementIndicator;
+    private bool showPlacementIndicator;
 
     private GameObject gameBoardLoader;
     public PlacementPopup placementPopup;
-    public LevelDescription levelDescription;
+    private bool firstTime = true;
+
     public RepositionButton repositionButton;
 
     void Start()
@@ -25,22 +27,14 @@ public class Main : MonoBehaviour
         arOrigin = FindObjectOfType<ARSessionOrigin>();
         gameBoardLoader = FindObjectOfType<BoardLoader>().gameObject;
 
-        placementPopup.OpenPopup();
+
+        showPlacementIndicator = true;
     }
 
     void Update()
     {
         UpdatePlacementPose();
         UpdatePlacementIndicator();
-
-        /*if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            if (boardPlaced == false)
-            {
-                PlaceBoard();
-            }
-
-        }*/
     }
 
     private void UpdatePlacementPose()
@@ -63,10 +57,17 @@ public class Main : MonoBehaviour
 
     private void UpdatePlacementIndicator()
     {
-        if (placementPoseIsValid)
+        if (placementPoseIsValid && showPlacementIndicator)
         {
+            if (firstTime)
+            {
+                placementPopup.OpenPopup();
+                firstTime = false;
+            }
+
             placementIndicator.SetActive(true);
             placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
+            gameBoardLoader.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
         }
         else
         {
@@ -78,22 +79,27 @@ public class Main : MonoBehaviour
     {
         repositionButton.HideButton();
         placementPopup.OpenPopup();
+        showPlacementIndicator = true;
+        gameBoardLoader.GetComponent<BoardLoader>().PauseLevel();
     }
 
     // Place the board at the place of the placement indicator
     public void PlaceBoard()
     {
-        // Place for the first time
-        if (boardPlaced == false)
+        if (placementPoseIsValid)
         {
-            levelDescription.ShowDescription("Test", "And even when they give everything. Nothing gives them the chance to get it.");
-            gameBoardLoader.GetComponent<BoardLoader>().LoadLevel();
+            // Place for the first time
+            if (boardPlaced == false)
+            {
+                gameBoardLoader.GetComponent<BoardLoader>().LoadLevel(0);
+            }
+
+            boardPlaced = true;
+            placementPopup.ClosePopup();
+            gameBoardLoader.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
+            repositionButton.ShowButton();
+            showPlacementIndicator = false;
+            gameBoardLoader.GetComponent<BoardLoader>().ContinueLevel();
         }
-
-        boardPlaced = true;
-        placementPopup.ClosePopup();
-        gameBoardLoader.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
-        repositionButton.ShowButton();
-
     }
 }

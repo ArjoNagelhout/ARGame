@@ -251,8 +251,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'A new beginning is only half of the work, therefore we need to make it
-    more clear. '
+  m_Text: 'The subtitle goes here. This is to make sure there is enough text to make
+    it clear how the text flows. '
 --- !u!222 &187553766
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -858,8 +858,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 961401654215624367, guid: 889ad9519089e4a2b9f60e4064d80a73, type: 3}
-  currentLevel_id: 0
+  - {fileID: 961401654215624367, guid: 22996afe07b34415ab721a0cbd060306, type: 3}
+  currentLevelId: 0
   toFollow: {fileID: 1658260962}
+  levelDescription: {fileID: 1903188073}
 --- !u!1 &998406803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,7 +1694,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Level 1
+  m_Text: Title
 --- !u!222 &1704938769
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1818,7 +1820,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementIndicator: {fileID: 743374400}
   placementPopup: {fileID: 1142598212}
-  levelDescription: {fileID: 1903188073}
   repositionButton: {fileID: 1148953303}
 --- !u!1 &1815558577
 GameObject:
