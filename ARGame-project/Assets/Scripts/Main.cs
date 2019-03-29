@@ -17,6 +17,7 @@ public class Main : MonoBehaviour
 
     private GameObject gameBoardLoader;
     public PlacementPopup placementPopup;
+    public LevelDescription levelDescription;
 
     void Start()
     {
@@ -72,6 +73,7 @@ public class Main : MonoBehaviour
     public void PlaceBoard()
     {
         placementPopup.ClosePopup();
+        levelDescription.ShowDescription("Test", "And even when they give everything. Nothing gives them the chance to get it.");
         gameBoardLoader.GetComponent<BoardLoader>().LoadLevel(placementPose);
     }
 }

@@ -1739,6 +1739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementIndicator: {fileID: 743374400}
   placementPopup: {fileID: 1142598212}
+  levelDescription: {fileID: 1903188073}
 --- !u!1 &1815558577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,8 +1828,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1903188072}
-  - component: {fileID: 1903188073}
   - component: {fileID: 1903188074}
+  - component: {fileID: 1903188073}
   m_Layer: 5
   m_Name: LevelDescription
   m_TagString: Untagged
@@ -1869,8 +1870,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b448432898c98493285b8595f3825a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: 
-  description: 
+  title: {fileID: 1704938768}
+  subTitle: {fileID: 187553765}
+  animator: {fileID: 1903188074}
 --- !u!95 &1903188074
 Animator:
   serializedVersion: 3

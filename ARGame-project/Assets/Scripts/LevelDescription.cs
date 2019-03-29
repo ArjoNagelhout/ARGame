@@ -1,26 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelDescription : MonoBehaviour
 {
-    public string title;
-    public string description;
+    public Text title;
+    public Text subTitle;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Animator animator;
 
-    // Update is called once per frame
-    void Update()
+    public void ShowDescription(string newTitle, string newSubtitle)
     {
-        
-    }
+        title.text = newTitle;
+        subTitle.text = newSubtitle;
 
-    public void UpdateDescription()
-    {
-        
+        animator.SetTrigger("showDescription");
+
     }
 }
+    
