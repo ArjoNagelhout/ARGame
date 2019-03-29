@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AR Game.unity
     guid: dbed0ccc74ac240ed9cd779c8fc56ac5
+  - enabled: 1
+    path: Assets/Scenes/End Screen.unity
+    guid: e9beb8ff689a84e83a64c0b634995ebf
   m_configObjects: {}

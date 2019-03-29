@@ -146,10 +146,10 @@ RectTransform:
   m_Father: {fileID: 1358229739}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1.1799927, y: -174.73999}
-  m_SizeDelta: {x: -58.459976, y: 126.82}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -1.1799927, y: 87.26001}
+  m_SizeDelta: {x: -58.45996, y: 126.82001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &39274092
 MonoBehaviour:
@@ -192,7 +192,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1926689268}
-        m_MethodName: StartGame
+        m_MethodName: OpenWebPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -311,7 +311,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I don't want that
+  m_Text: I want my privacy back
 --- !u!222 &173721845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207.6, y: 478.6}
+  m_AnchoredPosition: {x: 207.65, y: 11}
   m_SizeDelta: {x: 334.7, y: 262.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282498868
@@ -426,7 +426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 329.37, y: -61.600006}
+  m_AnchoredPosition: {x: 329.37, y: -56}
   m_SizeDelta: {x: 602.64, y: 56.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384294483
@@ -462,7 +462,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.07
-  m_Text: This game spies on you
+  m_Text: Start your journey to privacy
 --- !u!222 &384294484
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -505,8 +505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 329.37, y: -222.5}
-  m_SizeDelta: {x: 602.6, y: 265.3}
+  m_AnchoredPosition: {x: 329.37, y: -131.5}
+  m_SizeDelta: {x: 602.6, y: 69.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &887226195
 MonoBehaviour:
@@ -541,11 +541,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.07
-  m_Text: "We use cookies to watch you while you sleep, to monitor your social status
-    and to analyse your fingerprints. We also share everything about your personal
-    life with our partners who will combine it with other information that you\u2019ve
-    provided to them or that they\u2019ve collected from keeping an eye on you. You
-    consent to our activities if you continue to use our game."
+  m_Text: 'Start taking your privacy back by clicking on the button below:'
 --- !u!222 &887226196
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -665,8 +661,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 368}
-  m_SizeDelta: {x: 661.1, y: 523}
+  m_AnchoredPosition: {x: 0, y: 281.6}
+  m_SizeDelta: {x: 661.1, y: 350.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1358229740
 MonoBehaviour:
@@ -1090,7 +1086,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.07
-  m_Text: "An Augmented Reality \npuzzle about the state of internet privacy"
+  m_Text: 'Share the message. '
 --- !u!222 &1626136571
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1169,7 +1165,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1.07
-  m_Text: "You're \nbeing \nfollowed"
+  m_Text: "Please\r keep an eye \rout for friends"
 --- !u!222 &1739236368
 CanvasRenderer:
   m_ObjectHideFlags: 0

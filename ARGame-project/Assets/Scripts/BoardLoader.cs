@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BoardLoader : MonoBehaviour
 {
@@ -13,12 +14,15 @@ public class BoardLoader : MonoBehaviour
 
     public LevelDescription levelDescription;
 
+    public AudioSource succesSound;
+
     public void LoadLevel(int id)
     {
         // Destroys the previous level
         if (currentLevel != null)
         {
             currentLevel.GetComponent<GameBoard>().DestroyBoard();
+            succesSound.Play();
         }
 
         // Create the new level
@@ -64,6 +68,7 @@ public class BoardLoader : MonoBehaviour
         else
         {
             // Show end screen
+            SceneManager.LoadScene(2);
         }
     }
 }
