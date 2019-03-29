@@ -25,8 +25,8 @@ public class BoardLoader : MonoBehaviour
         currentLevel = Instantiate(levels[id]);
         currentLevel.transform.SetParent(transform, false);
         currentLevel.GetComponent<Animator>().SetBool("showBoard", true);
-        string title = "Level " + (id+1).ToString();
-        levelDescription.ShowDescription(title, currentLevel.GetComponent<GameBoard>().subtitle);
+        GameBoard gameBoard = currentLevel.GetComponent<GameBoard>();
+        levelDescription.ShowDescription(gameBoard.title, gameBoard.subtitle);
 
         followingCameras = currentLevel.GetComponentsInChildren<FollowingCamera>();
 

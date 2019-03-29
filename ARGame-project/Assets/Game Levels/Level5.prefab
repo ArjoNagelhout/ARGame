@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8083006247759857140}
   - component: {fileID: 1665113613400010553}
   m_Layer: 0
-  m_Name: Level2
+  m_Name: Level5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,9 +86,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placementIndicator: {fileID: 0}
-  title: Level 2
-  subtitle: "Are you willing to give your most intimate moments away to someone you
-    don\u2019t know?"
+  title: Level 5
+  subtitle: Is the price of a product an excuse for exploiting a human being?
   animator: {fileID: 8083006247759857140}
 --- !u!1001 &797642020579808683
 PrefabInstance:
@@ -1682,7 +1681,7 @@ PrefabInstance:
     - target: {fileID: 1532898060750727943, guid: 673703eba58fd40968adf77ed31ff52d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1532898060750727943, guid: 673703eba58fd40968adf77ed31ff52d,
         type: 3}
@@ -1692,7 +1691,7 @@ PrefabInstance:
     - target: {fileID: 1532898060750727943, guid: 673703eba58fd40968adf77ed31ff52d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1532898060750727943, guid: 673703eba58fd40968adf77ed31ff52d,
         type: 3}
@@ -1809,7 +1808,7 @@ PrefabInstance:
     - target: {fileID: 1532898060750727943, guid: 673703eba58fd40968adf77ed31ff52d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1532898060750727943, guid: 673703eba58fd40968adf77ed31ff52d,
         type: 3}
@@ -1819,7 +1818,7 @@ PrefabInstance:
     - target: {fileID: 1532898060750727943, guid: 673703eba58fd40968adf77ed31ff52d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1532898060750727943, guid: 673703eba58fd40968adf77ed31ff52d,
         type: 3}

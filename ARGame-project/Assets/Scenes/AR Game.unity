@@ -251,8 +251,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'The subtitle goes here. This is to make sure there is enough text to make
-    it clear how the text flows. '
+  m_Text: "You are being watched, tracked and followed by digital security camera's.
+    \n\nShort circuit them by putting them on the corresponding blocker. "
 --- !u!222 &187553766
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -857,8 +857,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 961401654215624367, guid: 889ad9519089e4a2b9f60e4064d80a73, type: 3}
+  - {fileID: 961401654215624367, guid: e99f93587701f48cd9c202bb4652e0a5, type: 3}
   - {fileID: 961401654215624367, guid: 94d314b28a7264670acfbe11cec80028, type: 3}
+  - {fileID: 961401654215624367, guid: 889ad9519089e4a2b9f60e4064d80a73, type: 3}
+  - {fileID: 961401654215624367, guid: c5c125767479a4fe1b6a7b41f3a41095, type: 3}
+  - {fileID: 961401654215624367, guid: b75d172a2317b4bae893229c2d653ed5, type: 3}
+  - {fileID: 961401654215624367, guid: fbdce06bd141142e5bc2ed4727043240, type: 3}
+  - {fileID: 961401654215624367, guid: c35cd58d01291405dabc0e4718761116, type: 3}
+  - {fileID: 961401654215624367, guid: 25a4a2e849cb94d58b875650e842eb18, type: 3}
+  - {fileID: 961401654215624367, guid: b9d61e444c29d40ab8a6d40c418da7e0, type: 3}
   currentLevelId: 0
   toFollow: {fileID: 1658260962}
   levelDescription: {fileID: 1903188073}
@@ -1937,7 +1944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.02999878, y: -366.7}
+  m_AnchoredPosition: {x: 0.030029297, y: -366.7}
   m_SizeDelta: {x: -0.070007324, y: 733.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903188073

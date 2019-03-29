@@ -9,6 +9,8 @@ public class GameBoard : MonoBehaviour
 
     public Transform placementIndicator;
 
+    public string title;
+    [TextArea]
     public string subtitle;
 
     private BoardLoader gameBoardLoader;
