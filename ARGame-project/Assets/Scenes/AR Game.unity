@@ -697,7 +697,7 @@ Transform:
   m_GameObject: {fileID: 655405321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 1658260962}
   m_Father: {fileID: 0}
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 961401654215624367, guid: 889ad9519089e4a2b9f60e4064d80a73, type: 3}
-  - {fileID: 961401654215624367, guid: 22996afe07b34415ab721a0cbd060306, type: 3}
+  - {fileID: 961401654215624367, guid: 94d314b28a7264670acfbe11cec80028, type: 3}
   currentLevelId: 0
   toFollow: {fileID: 1658260962}
   levelDescription: {fileID: 1903188073}

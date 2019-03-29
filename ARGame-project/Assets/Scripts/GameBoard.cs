@@ -48,6 +48,6 @@ public class GameBoard : MonoBehaviour
 
     public void DestroyBoard()
     {
-
+        animator.SetBool("showBoard", false);
     }
 }
